@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="bean.Schemes" table="schemes">
+        <id name="sId" type="java.lang.Integer">
+            <column name="SCHEME_ID" />
+            <generator class="assigned" />
+        </id>
+        <property name="sName" type="java.lang.String">
+        	<column name="SCHEME_NAME" />
+        </property>
+
+ <property name="bId" type="java.lang.Integer">
+        	<column name="BUILDER_ID" />
+        </property>
+       
+         <property name="lId" type="java.lang.Integer">
+        	<column name="LOCATION_ID" />
+        </property>
+
+ <property name="cityCode" type="java.lang.Integer">
+        	<column name="CITY_CODE" />
+        </property>
+        
+    </class>
+</hibernate-mapping>

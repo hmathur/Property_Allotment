@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="bean.Customer" table="customer">
+        <id name="customerId" type="java.lang.Integer">
+            <column name="CUSTOMER_ID" />
+            <generator class="assigned" />
+        </id>
+        <property name="customerName" type="java.lang.String">
+        	<column name="CUSTOMER_NAME" />
+        </property>
+        
+        <property name="address" type="java.lang.String">
+            <column name="ADDRESS" />
+        </property> 
+        
+         <property name="email" type="java.lang.Char">
+            <column name="EMAIL_ID" />
+        </property>     
+        
+         <property name="number" type="java.lang.Integer">
+            <column name="PHONE" />
+        </property>   
+        
+        <property name="password" type="java.lang.Char">
+            <column name="PASSWORD" />
+        </property>   
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="bean.Apartment" table="apartment">
+        <id name="aId" type="java.lang.Integer">
+            <column name="APARTMENT_ID" />
+            <generator class="assigned" />
+        </id>
+        <property name="aName" type="java.lang.String">
+        	<column name="APARTMENT_NAME" />
+        </property>
+        
+        <property name="sId" type="java.lang.Integer">
+            <column name="SCHEME_ID" />
+        </property> 
+        
+         <property name="bId" type="java.lang.Integer">
+            <column name="BUILDER_ID" />
+        </property>     
+        
+         <property name="lId" type="java.lang.Integer">
+            <column name="LOCATION_ID" />
+        </property>   
+        
+        <property name="cityCode" type="java.lang.Integer">
+            <column name="CITY_CODE" />
+        </property>   
+        
+         <property name="areaCode" type="java.lang.Integer">
+        	<column name="AREA_CODE" />
+        </property>
+        
+        <property name="dFNA" type="java.lang.Integer">
+            <column name="DIST_FROM_NEAREST_AIRPORT" />
+        </property> 
+        
+         <property name="dFRS" type="java.lang.Integer">
+            <column name="DIST_FROM_NEAREST_RAILWAY" />
+        </property>     
+        
+         <property name="dFCOC" type="java.lang.Integer">
+            <column name="DIST_FROM_CENTER_OF_CITY" />
+        </property>   
+        
+        <property name="dFNH" type="java.lang.Integer">
+            <column name="DIST_FROM_NEAREST_HOSPITAL" />
+        </property>   
+        
+       <property name="cost" type="java.lang.Integer">
+            <column name="COST" />
+        </property>     
+        
+         <property name="availabilty" type="java.lang.Boolean">
+            <column name="AVAILABILITY" />
+        </property>   
+        
+        <property name="floor" type="java.lang.Integer">
+            <column name="FLOOR" />
+        </property>   
+    </class>
+</hibernate-mapping>

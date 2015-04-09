@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="bean.Account" table="account">
+		<id name="accountNo" type="java.lang.Integer">
+			<column name="ACCOUNT_NO" />
+			<generator class="assigned" />
+		</id>
+		<property name="transactionId" type="java.lang.Integer">
+			<column name="TRANSACTION_ID" />
+		</property>
+
+		<property name="customerId" type="java.lang.Integer">
+			<column name="CUSTOMER_ID" />
+		</property>
+
+		<property name="date" type="java.lang.Date">
+			<column name="DATE" />
+		</property>
+	
+	</class>
+</hibernate-mapping>
